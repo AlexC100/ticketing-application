@@ -1,10 +1,12 @@
 // UI Variables
 const ticketsList = document.querySelector("#tickets-list");
 
+let ticketsDb = [];
 // Populate table with tickets
 axios
   .get("tickets.json")
   .then((res) => {
+    ticketsDb = res.data;
     let output = "";
     res.data.forEach((ticket) => {
       output += `
@@ -20,3 +22,31 @@ axios
     ticketsList.innerHTML = output;
   })
   .catch((err) => console.log(err));
+
+// Ag Grid //
+// Specify columns
+const columnDefs = [
+  { field: "id", sortable: true, filter: true },
+  { field: "title", sortable: true, filter: true },
+  { field: "user", sortable: true, filter: true },
+  { field: "department", sortable: true, filter: true },
+  { field: "status", sortable: true, filter: true },
+];
+
+const rowData = [];
+
+agGrid.simpleHttpRequest({ url: "tickets.json" }).then((data) => {
+  gridOptions.api.setRowData(data);
+});
+
+// let the grid know which columns and what data to use
+const gridOptions = {
+  columnDefs: columnDefs,
+  rowData: rowData,
+};
+
+// lookup the container we want the Grid to use
+const eGridDiv = document.querySelector("#myGrid");
+
+// create the grid passing in the div to use together with the columns & data we want to use
+new agGrid.Grid(eGridDiv, gridOptions);
