@@ -40,7 +40,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col py-5 px-5 border rounded-lg bg-light shadow-sm">
+        <div class="col py-4 px-5 border rounded-lg bg-light shadow-sm">
           <div class="w-50">
             <input
               type="text"
@@ -49,145 +49,25 @@
             />
           </div>
           <table
-            class="table shadow table-hover table-sm mt-3 text-center bg-light"
+            class="table table-responsive-md shadow table-hover table-sm mt-3 text-center"
           >
-            <thead class="border">
+            <thead>
               <tr>
-                <th scope="col">ID</th>
-                <th scope="col">Title</th>
-                <th scope="col">User</th>
-                <th scope="col">Department</th>
+                <th scope="col"><p class="right-border">ID</p></th>
+                <th scope="col"><p class="right-border">Title</p></th>
+                <th scope="col"><p class="right-border">User</p></th>
+                <th scope="col"><p class="right-border">Department</p></th>
                 <th scope="col">Status</th>
               </tr>
             </thead>
-            <tbody class="border table-bordered">
-              <tr>
-                <td>54621321</td>
-                <td>Printer malfunction</td>
-                <td>Valentin91</td>
-                <td>Office Manager</td>
-                <td>IN PROGRESS</td>
-              </tr>
-              <tr>
-                <td>56123158</td>
-                <td>Account expired</td>
-                <td>Alexandru3</td>
-                <td>Security Manager</td>
-                <td>CLOSED</td>
-              </tr>
-              <tr>
-                <td>54621321</td>
-                <td>Printer malfunction</td>
-                <td>Valentin91</td>
-                <td>Office Manager</td>
-                <td>IN PROGRESS</td>
-              </tr>
-              <tr>
-                <td>56123158</td>
-                <td>Account expired</td>
-                <td>Alexandru3</td>
-                <td>Security Manager</td>
-                <td>CLOSED</td>
-              </tr>
-              <tr>
-                <td>54621321</td>
-                <td>Printer malfunction</td>
-                <td>Valentin91</td>
-                <td>Office Manager</td>
-                <td>IN PROGRESS</td>
-              </tr>
-              <tr>
-                <td>56123158</td>
-                <td>Account expired</td>
-                <td>Alexandru3</td>
-                <td>Security Manager</td>
-                <td>CLOSED</td>
-              </tr>
-              <tr>
-                <td>54621321</td>
-                <td>Printer malfunction</td>
-                <td>Valentin91</td>
-                <td>Office Manager</td>
-                <td>IN PROGRESS</td>
-              </tr>
-              <tr>
-                <td>56123158</td>
-                <td>Account expired</td>
-                <td>Alexandru3</td>
-                <td>Security Manager</td>
-                <td>CLOSED</td>
-              </tr>
-              <tr>
-                <td>54621321</td>
-                <td>Printer malfunction</td>
-                <td>Valentin91</td>
-                <td>Office Manager</td>
-                <td>IN PROGRESS</td>
-              </tr>
-              <tr>
-                <td>56123158</td>
-                <td>Account expired</td>
-                <td>Alexandru3</td>
-                <td>Security Manager</td>
-                <td>CLOSED</td>
-              </tr>
-              <tr>
-                <td>54621321</td>
-                <td>Printer malfunction</td>
-                <td>Valentin91</td>
-                <td>Office Manager</td>
-                <td>IN PROGRESS</td>
-              </tr>
-              <tr>
-                <td>56123158</td>
-                <td>Account expired</td>
-                <td>Alexandru3</td>
-                <td>Security Manager</td>
-                <td>CLOSED</td>
-              </tr>
-              <tr>
-                <td>54621321</td>
-                <td>Printer malfunction</td>
-                <td>Valentin91</td>
-                <td>Office Manager</td>
-                <td>IN PROGRESS</td>
-              </tr>
-              <tr>
-                <td>56123158</td>
-                <td>Account expired</td>
-                <td>Alexandru3</td>
-                <td>Security Manager</td>
-                <td>CLOSED</td>
-              </tr>
-              <tr>
-                <td>54621321</td>
-                <td>Printer malfunction</td>
-                <td>Valentin91</td>
-                <td>Office Manager</td>
-                <td>IN PROGRESS</td>
-              </tr>
-              <tr>
-                <td>56123158</td>
-                <td>Account expired</td>
-                <td>Alexandru3</td>
-                <td>Security Manager</td>
-                <td>CLOSED</td>
-              </tr>
-              <tr>
-                <td>54621321</td>
-                <td>Printer malfunction</td>
-                <td>Valentin91</td>
-                <td>Office Manager</td>
-                <td>IN PROGRESS</td>
-              </tr>
-              <tr>
-                <td>56123158</td>
-                <td>Account expired</td>
-                <td>Alexandru3</td>
-                <td>Security Manager</td>
-                <td>CLOSED</td>
-              </tr>
-            </tbody>
+            <tr class="table-borderless bg-light">
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tbody id="tickets-list"></tbody>
           </table>
         </div>
       </div>
@@ -210,5 +90,12 @@
       integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Axios JS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="main.js"></script>
+    t
   </body>
 </html>
