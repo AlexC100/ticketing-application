@@ -13,6 +13,10 @@ header h2 {
   font-weight: 500;
 }
 
+.container {
+  min-height: 69%;
+}
+
 .greeting {
   font-size: 23px;
 }

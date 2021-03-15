@@ -50,3 +50,21 @@ const eGridDiv = document.querySelector("#myGrid");
 
 // create the grid passing in the div to use together with the columns & data we want to use
 new agGrid.Grid(eGridDiv, gridOptions);
+
+function openTicket(event) {
+  ticketsDb.forEach((ticket) => {
+    if (
+      event.target.innerHTML === ticket.id ||
+      ticket.title ||
+      ticket.user ||
+      ticket.department ||
+      ticket.status
+    ) {
+      console.log(event.target.innerHTML);
+    }
+  });
+}
+
+eGridDiv.addEventListener("click", (e) => {
+  openTicket(e);
+});
