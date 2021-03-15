@@ -20,19 +20,6 @@
       rel="stylesheet"
     />
 
-    <!-- Ag-Grid JS -->
-    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
-
-    <!-- Ag-Grid CSS -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-alpine.css"
-    />
-
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
 
@@ -46,54 +33,27 @@
       </div>
     </header>
 
-    <div class="container-lg my-5 mx-auto p-5">
+    <div class="container my-5 mx-auto p-5" style="min-width: 90vw;"> 
       <div class="row">
-        <div class="col p-0">
-          <p id="greeting">Welcome <span class="name">Sebastian</span></p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col py-4 px-5 border rounded-lg bg-light shadow-sm">
-          <div
-            id="myGrid"
-            class="ag-theme-alpine my-5 mx-auto"
-            style="height: 900px; max-width: 100%"
-          ></div>
-          <!-- <div class="w-50">
-            <input
-              type="text"
-              class="form-control w-75"
-              placeholder="Type to filter..."
-            />
-          </div> -->
+        <div class="col-md-5 message-container"><h1 id="message-up">We are here</h1>
+            <h1 id="message-down">FOR YOU</h1></div>
 
-          <!-- <table
-            class="table table-responsive-md shadow table-hover table-sm mt-3 text-center"
-          >
-            <thead>
-              <tr>
-                <th scope="col"><p class="right-border">ID</p></th>
-                <th scope="col"><p class="right-border">Title</p></th>
-                <th scope="col"><p class="right-border">User</p></th>
-                <th scope="col"><p class="right-border">Department</p></th>
-                <th scope="col">Status</th>
-              </tr>
-            </thead>
-            <tr class="table-borderless bg-light">
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tbody id="tickets-list"></tbody>
-          </table> -->
+        <div class="col-md-4 p-0 login-form"> 
+            <div class="input-info px-4">
+            <h2 class="info-text">Login</h2>
+            <h3>Username <br><input class="form-control input-sm" type= "text" placeholder="Enter username..."></h3><br>
+            <h3>Password <br><input class="form-control input-sm" type="password"></h3>
+            <a href="#" id="register">Register</a> <br>
+            <button class="login-button btn btn-primary">Login</button>
+        </div>
+
+
         </div>
       </div>
     </div>
 
     <footer
-      class="pt-5 absolute-bottom bg-light w-100 py-3 px-5 border-top shadow text-center"
+      class="pt-5 absolute-bottom bg-light w-100 py-3 px-5 border-top shadow text-center footer"
     >
       <h3>&copy; Help desk team</h3>
     </footer>

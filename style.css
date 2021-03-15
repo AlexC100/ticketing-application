@@ -6,15 +6,12 @@ body {
 header h1 {
   font-size: 48px;
   font-weight: 600;
+  margin-bottom: 0;
 }
 
 header h2 {
   font-size: 23px;
   font-weight: 500;
-}
-
-.container {
-  min-height: 69%;
 }
 
 .greeting {
@@ -36,9 +33,14 @@ tbody tr {
   font-weight: 300;
 }
 
+.container{
+  min-height: 69vh;
+}
+
 tbody tr:hover {
   cursor: pointer;
 }
+
 
 p {
   margin: 0;
@@ -46,4 +48,94 @@ p {
 
 .right-border {
   border-right: 1px solid #ccc;
+}
+
+.info-text { 
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+
+.login-form {
+  border: 1px solid #C2C2C2;
+  border-radius: 8px;
+  background-color: #F3F3F3;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.login-form h3{
+  font-size: 19px;
+  font-weight: normal;
+}
+
+.input-info {
+
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+
+.input-info input { 
+  border: 1px solid #D0CFCF;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 3px;
+}
+
+
+
+#register {
+  color: #1A0DAB;
+}
+
+.login-button {
+  margin-top: 50px;
+  background-color: #969696;
+  padding: 8px 30px 8px 30px;
+  border-radius: 8px;
+  border: none;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.login-button:hover {
+  background-color: #5e5e5e;
+}
+
+.login-button:active {
+  background-color: #5e5e5e !important;
+}
+
+.login-button:focus {
+  background-color: #5e5e5e !important;
+}
+
+
+
+#message-up {
+  font-size: 54px;
+  font-weight: 500;
+  margin-bottom: -15px;
+}
+
+#message-down {
+  font-size: 54px;
+  font-weight: 600;
+}
+
+.message-container {
+  margin-top: 50px;
+}
+
+
+#ticket-container { 
+  margin:0 20%;
+
+}
+
+
+.login-form h4{
+  font-size: 1.5rem;
+  font-weight: 400;
 }
