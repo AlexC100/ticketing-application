@@ -1,43 +1,22 @@
 // UI Variables
- 
-
 
 // Utility variables
 let ticketsDb = [];
-
-
 
 // Populate table with tickets
 axios
   .get("tickets.json")
   .then((res) => {
     ticketsDb = res.data;
-
-    // Nu cred ca mai e nevoie? Stergi tu daca e
-    //==================================================================================
-    // let output = "";
-    // res.data.forEach((ticket) => {
-    //   output += `
-    //       <tr>
-    //         <td><p class="right-border">${ticket.id}</p></td>
-    //         <td><p class="right-border">${ticket.title}</p></td>
-    //         <td><p class="right-border">${ticket.user}</p></td>
-    //         <td><p class="right-border">${ticket.department}</p></td>
-    //         <td>${ticket.status}</td>
-    //       </tr>
-    //     `;
-    // });
-    // ticketsList.innerHTML = output;
-    //==================================================================================
   })
   .catch((err) => console.log(err));
 
 // Ag Grid //
 // Specify columns
 const columnDefs = [
-  { field: "id", lockPosition: true,  filter: true }, //eu zic ca e mai bine ca id-ul sa ramane pe pozitie, si oricum bagam filter dupa criteriu pe care il vrea
-  { field: "title",  filter: true },
-  { field: "user",  filter: true },
+  { field: "id", lockPosition: true, filter: true }, //eu zic ca e mai bine ca id-ul sa raman0 pe pozitie, si oricum bagam filter dupa criteriu pe care il vrea
+  { field: "title", filter: true },
+  { field: "user", filter: true },
   { field: "department", filter: true },
   { field: "status", filter: true },
 ];
@@ -61,8 +40,6 @@ const eGridDiv = document.querySelector("#myGrid");
 // create the grid passing in the div to use together with the columns & data we want to use
 new agGrid.Grid(eGridDiv, gridOptions);
 
-
-
 function openTicket(event) {
   ticketsDb.forEach((ticket) => {
     if (
@@ -77,13 +54,12 @@ function openTicket(event) {
   });
 }
 
-
-
 eGridDiv.addEventListener("click", (e) => {
   openTicket(e);
 });
 
 function onFilterTextBoxChanged() {
-  gridOptions.api.setQuickFilter(document.getElementById('filter-text-box').value); //asta nu cred ca o sa ramana asa, trebuie facut altfel
+  gridOptions.api.setQuickFilter(
+    document.getElementById("filter-text-box").value
+  ); //asta nu cred ca o sa ramana asa, trebuie facut altfel
 }
-

@@ -1,118 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- Google Fonts Link -->
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet" />
+    <!-- Ag-Grid JS -->
+    <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
 
-  <!-- Ag-Grid JS -->
-  <script src="https://unpkg.com/ag-grid-community/dist/ag-grid-community.min.noStyle.js"></script>
+    <!-- Ag-Grid CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-alpine.css"
+    />
 
-  <!-- Ag-Grid CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-grid.css" />
-  <link rel="stylesheet" href="https://unpkg.com/ag-grid-community/dist/styles/ag-theme-alpine.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css" />
+    <title>Help Desk | Ticket List</title>
+  </head>
 
-  <title>Help Desk | Ticket List</title>
-</head>
+  <body>
+    <header
+      class="d-flex justify-content-between bg-light w-100 py-3 px-5 border-bottom shadow-sm"
+    >
+      <div class="pl-5 ml-5">
+        <h1>Help Desk</h1>
+        <h2>Tickets</h2>
+      </div>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-item nav-link" href="index.html"
+              >Login <span class="sr-only">(current)</span></a
+            >
+            <a class="nav-item nav-link" href="newticket.html">New ticket</a>
+            <a class="nav-item nav-link active" href="tickets.html">Tickets</a>
+            <a class="nav-item nav-link" href="register.html">Register</a>
+          </div>
+        </div>
+      </nav>
+    </header>
 
-<body>
-  <header class="d-flex justify-content-between bg-light w-100 py-3 px-5 border-bottom shadow-sm">
-    <div class="pl-5 ml-5">
-      <h1>Help Desk</h1>
-      <h2>Tickets</h2>
-    </div>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-item nav-link" href="index.html">Login <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="newticket.html">New ticket</a>
-          <a class="nav-item nav-link active" href="tickets.html">Tickets</a>
-          <a class="nav-item nav-link" href="register.html">Register</a>
+    <div class="container-lg my-5 mx-auto p-5">
+      <div class="row">
+        <div class="col p-0">
+          <p id="greeting">Welcome <span class="name">Sebastian</span></p>
         </div>
       </div>
-    </nav>
-  </header>
-
-  <div class="container-lg my-5 mx-auto p-5">
-    <div class="row">
-      <div class="col p-0">
-        <p id="greeting">Welcome <span class="name">Sebastian</span></p>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col py-4 px-5 border rounded-lg bg-light shadow-sm">
-        <!-- Filter box -> nu cred ca ramane asa, trebuie facut altfel oninput-ul -->
-        <input type="text" id="filter-text-box" placeholder="Type to filter..." oninput="onFilterTextBoxChanged()"
-          class="mt-4" />
-        <div id="myGrid" class="ag-theme-alpine mx-auto" style="height: 900px; max-width: 100%"></div>
-        <!-- <div class="w-50">
+      <div class="row">
+        <div class="col py-4 px-5 border rounded-lg bg-light shadow-sm">
+          <!-- Filter box -> nu cred ca ramane asa, trebuie facut altfel oninput-ul -->
+          <div class="d-flex">
             <input
               type="text"
-              class="form-control w-75"
+              id="filter-text-box"
               placeholder="Type to filter..."
+              oninput="onFilterTextBoxChanged()"
+              class="my-2 w-25 form-control mr-4"
             />
-          </div> -->
-
-        <!-- <table
-            class="table table-responsive-md shadow table-hover table-sm mt-3 text-center"
-          >
-            <thead>
-              <tr>
-                <th scope="col"><p class="right-border">ID</p></th>
-                <th scope="col"><p class="right-border">Title</p></th>
-                <th scope="col"><p class="right-border">User</p></th>
-                <th scope="col"><p class="right-border">Department</p></th>
-                <th scope="col">Status</th>
-              </tr>
-            </thead>
-            <tr class="table-borderless bg-light">
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tbody id="tickets-list"></tbody>
-          </table> -->
+            <button class="btn btn-secondary my-2 py-1 w-25">
+              Create New Ticket
+            </button>
+          </div>
+          <div
+            id="myGrid"
+            class="ag-theme-alpine mx-auto"
+            style="height: 900px; max-width: 100%"
+          ></div>
+        </div>
       </div>
     </div>
-  </div>
 
-  <footer class="pt-5 absolute-bottom bg-light w-100 py-3 px-5 border-top shadow text-center">
-    <h3>&copy; Help desk team</h3>
-  </footer>
+    <footer
+      class="pt-5 absolute-bottom bg-light w-100 py-3 px-5 border-top shadow text-center"
+    >
+      <h3>&copy; Help desk team</h3>
+    </footer>
 
-  <!-- Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-    crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
 
-  <!-- Axios JS -->
-  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- Axios JS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-  <!-- Custom JS -->
-  <script src="./script/tickets.js"></script>
-</body>
-
+    <!-- Custom JS -->
+    <script src="./script/tickets.js"></script>
+  </body>
 </html>

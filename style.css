@@ -33,14 +33,13 @@ tbody tr {
   font-weight: 300;
 }
 
-.container{
+.container {
   min-height: 69vh;
 }
 
 tbody tr:hover {
   cursor: pointer;
 }
-
 
 p {
   margin: 0;
@@ -50,43 +49,39 @@ p {
   border-right: 1px solid #ccc;
 }
 
-.info-text { 
+.info-text {
   font-size: 26px;
   font-weight: 600;
   margin-bottom: 50px;
 }
 
-
 .login-form {
-  border: 1px solid #C2C2C2;
+  border: 1px solid #c2c2c2;
   border-radius: 8px;
-  background-color: #F3F3F3;
+  background-color: #f3f3f3;
   margin-right: auto;
   margin-left: auto;
 }
 
-.login-form h3{
+.login-form h3 {
   font-size: 19px;
   font-weight: normal;
 }
 
 .input-info {
-
   padding-top: 30px;
   padding-bottom: 25px;
 }
 
-.input-info input { 
-  border: 1px solid #D0CFCF;
+.input-info input {
+  border: 1px solid #d0cfcf;
   border-radius: 5px;
   font-size: 1rem;
   margin-top: 3px;
 }
 
-
-
 #register {
-  color: #1A0DAB;
+  color: #1a0dab;
 }
 
 .login-button {
@@ -111,8 +106,6 @@ p {
   background-color: #5e5e5e !important;
 }
 
-
-
 #message-up {
   font-size: 54px;
   font-weight: 500;
@@ -128,14 +121,11 @@ p {
   margin-top: 50px;
 }
 
-
-#ticket-container { 
-  margin:0 20%;
-
+#ticket-container {
+  margin: 0 20%;
 }
 
-
-.login-form h4{
+.login-form h4 {
   font-size: 1.5rem;
   font-weight: 400;
 }
