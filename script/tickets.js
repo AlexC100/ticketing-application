@@ -14,11 +14,11 @@ axios
 // Ag Grid //
 // Specify columns
 const columnDefs = [
-  { field: "id", lockPosition: true, filter: true }, //eu zic ca e mai bine ca id-ul sa raman0 pe pozitie, si oricum bagam filter dupa criteriu pe care il vrea
-  { field: "title", filter: true },
-  { field: "user", filter: true },
-  { field: "department", filter: true },
-  { field: "status", filter: true },
+  { field: "id", lockPosition: true }, //eu zic ca e mai bine ca id-ul sa ramana pe pozitie, si oricum bagam filter dupa criteriu pe care il vrea
+  { field: "title" },
+  { field: "user" },
+  { field: "department" },
+  { field: "status" },
 ];
 
 const rowData = [];
