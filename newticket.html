@@ -50,10 +50,10 @@
             <h4 class="info-text text-center pt-3">Create new ticket</h4>
             <div class="row mx-5 align-items-center h-100">
                 <div class="col-md-6 mx-auto">
-                    <input id="testt" placeholder="Ticket Title..." type="text" class="form-control input-sm">
+                    <input id="ticketTitle-input" placeholder="Ticket Title..." type="text" class="form-control input-sm">
                 </div>
                 <div class="col-md-6 mx-auto">
-                    <select class="form-select w-100" aria-label="Default select example">
+                    <select id="select-departament" class="form-select w-100" aria-label="Default select example">
                         <option selected>Select Departament</option>
                         <option value="1">Design</option>
                         <option value="2">Dev</option>
@@ -63,7 +63,7 @@
             </div>
             <div class="row my-4 mx-5 align-items-center h-100">
                 <div class="col-md-6 mx-auto">
-                    <select class="form-select w-100" aria-label="Default select example">
+                    <select id="select-priority" class="form-select w-100" aria-label="Default select example">
                         <option selected>Select Priority</option>
                         <option value="1">Low</option>
                         <option value="2">Medium</option>
@@ -71,17 +71,17 @@
                     </select>
                 </div>
                 <div class="col-md-6 mx-auto">
-                    <button class="btn btn-sm btn-secondary mx-auto w-100">Upload a file</button>
+                    <button id="uploadFile-btn" class="btn btn-sm btn-secondary mx-auto w-100">Upload a file</button>
                 </div>
 
             </div>
             <div class="row mt-5">
                 <div class="col-md-10 mx-auto px-4">                 
-                    <textarea class="form-control mx-auto"  style="resize:none"  id="exampleFormControlTextarea1" rows="5" placeholder="Ticket details..."></textarea>
+                    <textarea class="form-control mx-auto"  style="resize:none"  id="textArea-input" rows="5" placeholder="Ticket details..."></textarea>
                 </div> 
             </div>
             <div class="row d-flex justify-content-center mt-3">
-            <button class="btn btn-md btn-secondary">Send Ticket</button>
+            <button class="btn btn-md btn-secondary" id="sendTicket-btn">Send Ticket</button>
         </div>
         </div>
 
@@ -103,7 +103,7 @@
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
     <!-- Custom JS -->
-    <script src="main.js"></script>
+    <script src="./script/newticket.js"></script>
 </body>
 
 </html>
