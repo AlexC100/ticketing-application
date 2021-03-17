@@ -1,5 +1,5 @@
 // UI Variables
-
+const createTicketBtn = document.querySelector("#create-ticket");
 // Utility variables
 let ticketsDb = [];
 
@@ -63,3 +63,8 @@ function onFilterTextBoxChanged() {
     document.getElementById("filter-text-box").value
   ); //asta nu cred ca o sa ramana asa, trebuie facut altfel
 }
+
+// Listen for click event on create ticket button
+createTicketBtn.addEventListener("click", () => {
+  window.location.replace("../newticket.html");
+});
