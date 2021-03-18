@@ -40,5 +40,5 @@ var ticketSchema = mongoose.Schema({
 var Ticket = (module.exports = mongoose.model("ticket", ticketSchema));
 
 module.exports.get = function (callback, limit) {
-  User.find(callback).limit(limit);
+  Ticket.find(callback).limit(limit);
 };

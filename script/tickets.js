@@ -5,9 +5,10 @@ let ticketsDb = [];
 
 // Populate table with tickets
 axios
-  .get("tickets.json")
+  .get("http://localhost:3000/api/ticket")
   .then((res) => {
     ticketsDb = res.data;
+    console.log(res.data.data);
   })
   .catch((err) => console.log(err));
 
