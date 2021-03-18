@@ -42,10 +42,12 @@ mongo.then(
 );
 
 //Import routes
-let apiRoutes = require("./user/router");
+let userRoutes = require("./user/router");
+let ticketRoutes = require("./ticket/router");
 
 //Use API routes in the App
-app.use("/api", apiRoutes);
+app.use("/api/user", userRoutes);
+app.use("/api/ticket", ticketRoutes);
 
 // Welcome message
 app.get("/", (req, res) => res.send("Welcome to Express"));

@@ -21,18 +21,13 @@ exports.index = function (req, res) {
 exports.add = function (req, res) {
   console.log(req.body);
   var user = new User();
+  user.id = req.body.id;
   user.firstName = req.body.firstName;
   user.lastName = req.body.lastName;
   user.department = req.body.department;
   user.email = req.body.email;
   user.password = req.body.password;
   user.userType = req.body.userType;
-  user.tickets = req.body.tickets;
-  user.title = req.body.title;
-  user.userName = req.body.userName;
-  user.toDepartment = req.body.toDepartment;
-  user.priority = req.body.priority;
-  user.ticketDetails = req.body.ticketDetails;
 
   //Save and check error
   user.save(function (err) {
@@ -60,13 +55,13 @@ exports.update = function (req, res) {
   User.findById(req.params.user_id, function (err, user) {
     if (err) res.send(err);
 
+    user.id = req.body.id;
     user.firstName = req.body.firstName;
     user.lastName = req.body.lastName;
     user.department = req.body.department;
     user.email = req.body.email;
     user.password = req.body.password;
     user.userType = req.body.userType;
-    user.tickets = req.body.tickets;
 
     //save and check errors
     user.save(function (err) {

@@ -1,32 +1,32 @@
 var mongoose = require("mongoose");
 
 //schema
-var userSchema = mongoose.Schema({
+var ticketSchema = mongoose.Schema({
   id: {
     type: String,
     required: true,
   },
-  firstName: {
+  title: {
     type: String,
     required: true,
   },
-  lastName: {
+  user: {
     type: String,
     required: true,
   },
-  department: {
+  toDepartment: {
     type: String,
     required: true,
   },
-  email: {
+  status: {
     type: String,
     required: true,
   },
-  password: {
+  priority: {
     type: String,
     required: true,
   },
-  userType: {
+  ticketDetails: {
     type: String,
     required: true,
   },
@@ -36,8 +36,8 @@ var userSchema = mongoose.Schema({
   },
 });
 
-// Export User Model
-var User = (module.exports = mongoose.model("user", userSchema));
+// Export Ticket Model
+var Ticket = (module.exports = mongoose.model("ticket", ticketSchema));
 
 module.exports.get = function (callback, limit) {
   User.find(callback).limit(limit);
