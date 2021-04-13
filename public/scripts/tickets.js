@@ -34,6 +34,33 @@ const gridOptions = {
   columnDefs: columnDefs,
   rowData: rowData,
 };
+const mobileColumn = [
+  { field: "id", lockPosition: true },
+  { field: "title" },
+  { field: "status" },
+];
+
+const mq = window.matchMedia("(min-width: 960px)");
+
+if (mq.matches) {
+  setTimeout(function () {
+    gridOptions.api.setColumnDefs(columnDefs);
+    gridOptions.api.sizeColumnsToFit();
+  });
+} else {
+  setTimeout(function () {
+    gridOptions.api.setColumnDefs(mobileColumn);
+    gridOptions.api.sizeColumnsToFit();
+  });
+}
+// window.addEventListener("resize", function () {
+//   setTimeout(function () {
+//     if (window.innerWidth <= 480) {
+//       gridOptions.api.setColumnDefs(mobileColumn);
+//       gridOptions.api.sizeColumnsToFit();
+//     }
+//   });
+// });
 
 // lookup the container we want the Grid to use
 const eGridDiv = document.querySelector("#myGrid");

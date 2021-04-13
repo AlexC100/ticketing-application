@@ -3,7 +3,7 @@
     "id": "54621321",
     "title": "Printer malfunction",
     "user": "Valentin91",
-    "toDepartment": "Office Manager",
+    "department": "Office Manager",
     "status": "IN PROGRESS",
     "priority": "low",
     "ticketDetails": "a lot of text"
@@ -12,7 +12,7 @@
     "id": "56123158",
     "title": "Account expired",
     "user": "Alexandru3",
-    "toDepartment": "Security Manager",
+    "department": "Security Manager",
     "status": "CLOSED",
     "priority": "medium",
     "ticketDetails": "a lot of text"
@@ -21,7 +21,7 @@
     "id": "54621321",
     "title": "Printer malfunction",
     "user": "Valentin91",
-    "toDepartment": "Office Manager",
+    "department": "Office Manager",
     "status": "IN PROGRESS",
     "priority": "low",
     "ticketDetails": "a lot of text"
@@ -30,7 +30,7 @@
     "id": "56123158",
     "title": "Account expired",
     "user": "Alexandru3",
-    "toDepartment": "Security Manager",
+    "department": "Security Manager",
     "status": "CLOSED",
     "priority": "medium",
     "ticketDetails": "a lot of text"
@@ -39,7 +39,7 @@
     "id": "54621321",
     "title": "Printer malfunction",
     "user": "Valentin91",
-    "toDepartment": "Office Manager",
+    "department": "Office Manager",
     "status": "IN PROGRESS",
     "priority": "low",
     "ticketDetails": "a lot of text"
@@ -48,7 +48,7 @@
     "id": "56123158",
     "title": "Account expired",
     "user": "Alexandru3",
-    "toDepartment": "Security Manager",
+    "department": "Security Manager",
     "status": "CLOSED",
     "priority": "medium",
     "ticketDetails": "a lot of text"
@@ -57,7 +57,7 @@
     "id": "54621321",
     "title": "Printer malfunction",
     "user": "Valentin91",
-    "toDepartment": "Office Manager",
+    "department": "Office Manager",
     "status": "IN PROGRESS",
     "priority": "low",
     "ticketDetails": "a lot of text"
@@ -66,7 +66,7 @@
     "id": "56123158",
     "title": "Account expired",
     "user": "Alexandru3",
-    "toDepartment": "Security Manager",
+    "department": "Security Manager",
     "status": "CLOSED",
     "priority": "medium",
     "ticketDetails": "a lot of text"
@@ -75,7 +75,7 @@
     "id": "54621321",
     "title": "Printer malfunction",
     "user": "Valentin91",
-    "toDepartment": "Office Manager",
+    "department": "Office Manager",
     "status": "IN PROGRESS",
     "priority": "low",
     "ticketDetails": "a lot of text"
@@ -84,7 +84,7 @@
     "id": "56123158",
     "title": "Account expired",
     "user": "Alexandru3",
-    "toDepartment": "Security Manager",
+    "department": "Security Manager",
     "status": "CLOSED",
     "priority": "medium",
     "ticketDetails": "a lot of text"
@@ -93,7 +93,7 @@
     "id": "54621321",
     "title": "Printer malfunction",
     "user": "Valentin91",
-    "toDepartment": "Office Manager",
+    "department": "Office Manager",
     "status": "IN PROGRESS",
     "priority": "low",
     "ticketDetails": "a lot of text"
@@ -102,7 +102,7 @@
     "id": "56123158",
     "title": "Account expired",
     "user": "Alexandru3",
-    "toDepartment": "Security Manager",
+    "department": "Security Manager",
     "status": "CLOSED",
     "priority": "medium",
     "ticketDetails": "a lot of text"
@@ -111,7 +111,7 @@
     "id": "54621321",
     "title": "Printer malfunction",
     "user": "Valentin91",
-    "toDepartment": "Office Manager",
+    "department": "Office Manager",
     "status": "IN PROGRESS",
     "priority": "low",
     "ticketDetails": "a lot of text"
@@ -120,7 +120,7 @@
     "id": "56123158",
     "title": "Account expired",
     "user": "Alexandru3",
-    "toDepartment": "Security Manager",
+    "department": "Security Manager",
     "status": "CLOSED",
     "priority": "medium",
     "ticketDetails": "a lot of text"
@@ -129,7 +129,7 @@
     "id": "54621321",
     "title": "Printer malfunction",
     "user": "Valentin91",
-    "toDepartment": "Office Manager",
+    "department": "Office Manager",
     "status": "IN PROGRESS",
     "priority": "low",
     "ticketDetails": "a lot of text"
@@ -138,7 +138,7 @@
     "id": "56123158",
     "title": "Account expired",
     "user": "Alexandru3",
-    "toDepartment": "Security Manager",
+    "department": "Security Manager",
     "status": "CLOSED",
     "priority": "medium",
     "ticketDetails": "a lot of text"
@@ -147,7 +147,7 @@
     "id": "54621321",
     "title": "Printer malfunction",
     "user": "Valentin91",
-    "toDepartment": "Office Manager",
+    "department": "Office Manager",
     "status": "IN PROGRESS",
     "priority": "low",
     "ticketDetails": "a lot of text"
@@ -156,7 +156,7 @@
     "id": "56123158",
     "title": "Account expired",
     "user": "Alexandru3",
-    "toDepartment": "Security Manager",
+    "department": "Security Manager",
     "status": "CLOSED",
     "priority": "medium",
     "ticketDetails": "a lot of text"
@@ -165,7 +165,7 @@
     "id": "54621321",
     "title": "Printer malfunction",
     "user": "Valentin91",
-    "toDepartment": "Office Manager",
+    "department": "Office Manager",
     "status": "IN PROGRESS",
     "priority": "low",
     "ticketDetails": "a lot of text"
@@ -174,7 +174,7 @@
     "id": "56123158",
     "title": "Account expired",
     "user": "Alexandru3",
-    "toDepartment": "Security Manager",
+    "department": "Security Manager",
     "status": "CLOSED",
     "priority": "medium",
     "ticketDetails": "a lot of text"
@@ -183,7 +183,7 @@
     "id": "54621321",
     "title": "Printer malfunction",
     "user": "Valentin91",
-    "toDepartment": "Office Manager",
+    "department": "Office Manager",
     "status": "IN PROGRESS",
     "priority": "low",
     "ticketDetails": "a lot of text"
@@ -192,7 +192,7 @@
     "id": "56123158",
     "title": "Account expired",
     "user": "Alexandru3",
-    "toDepartment": "Security Manager",
+    "department": "Security Manager",
     "status": "CLOSED",
     "priority": "medium",
     "ticketDetails": "a lot of text"
@@ -201,7 +201,7 @@
     "id": "54621321",
     "title": "Printer malfunction",
     "user": "Valentin91",
-    "toDepartment": "Office Manager",
+    "department": "Office Manager",
     "status": "IN PROGRESS",
     "priority": "low",
     "ticketDetails": "a lot of text"
@@ -210,7 +210,7 @@
     "id": "56123158",
     "title": "Account expired",
     "user": "Alexandru3",
-    "toDepartment": "Security Manager",
+    "department": "Security Manager",
     "status": "CLOSED",
     "priority": "medium",
     "ticketDetails": "a lot of text"
@@ -219,7 +219,7 @@
     "id": "54621321",
     "title": "Printer malfunction",
     "user": "Valentin91",
-    "toDepartment": "Office Manager",
+    "department": "Office Manager",
     "status": "IN PROGRESS",
     "priority": "low",
     "ticketDetails": "a lot of text"
@@ -228,7 +228,7 @@
     "id": "56123158",
     "title": "Account expired",
     "user": "Alexandru3",
-    "toDepartment": "Security Manager",
+    "department": "Security Manager",
     "status": "CLOSED",
     "priority": "medium",
     "ticketDetails": "a lot of text"
@@ -237,7 +237,7 @@
     "id": "54621321",
     "title": "Printer malfunction",
     "user": "Valentin91",
-    "toDepartment": "Office Manager",
+    "department": "Office Manager",
     "status": "IN PROGRESS",
     "priority": "low",
     "ticketDetails": "a lot of text"
@@ -246,7 +246,7 @@
     "id": "56123158",
     "title": "Account expired",
     "user": "Alexandru3",
-    "toDepartment": "Security Manager",
+    "department": "Security Manager",
     "status": "CLOSED",
     "priority": "medium",
     "ticketDetails": "a lot of text"
@@ -255,7 +255,7 @@
     "id": "54621321",
     "title": "Printer malfunction",
     "user": "Valentin91",
-    "toDepartment": "Office Manager",
+    "department": "Office Manager",
     "status": "IN PROGRESS",
     "priority": "low",
     "ticketDetails": "a lot of text"
@@ -264,7 +264,7 @@
     "id": "56123158",
     "title": "Account expired",
     "user": "Alexandru3",
-    "toDepartment": "Security Manager",
+    "department": "Security Manager",
     "status": "CLOSED",
     "priority": "medium",
     "ticketDetails": "a lot of text"
@@ -273,7 +273,7 @@
     "id": "54621321",
     "title": "Printer malfunction",
     "user": "Valentin91",
-    "toDepartment": "Office Manager",
+    "department": "Office Manager",
     "status": "IN PROGRESS",
     "priority": "low",
     "ticketDetails": "a lot of text"
@@ -282,7 +282,7 @@
     "id": "56123158",
     "title": "Account expired",
     "user": "Alexandru3",
-    "toDepartment": "Security Manager",
+    "department": "Security Manager",
     "status": "CLOSED",
     "priority": "medium",
     "ticketDetails": "a lot of text"
